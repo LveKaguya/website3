@@ -1,0 +1,78 @@
+/* Common Styles for Dark and Light Modes */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+header, footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.light-mode header {
+    background-color: #ffffff;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+body.light-mode footer {
+    background-color: #ffffff;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+body.light-mode .profile-card,
+body.light-mode .subscription-section,
+body.light-mode .payment-section {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #181c1c;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #282828;
+    color: #e0e0e0;
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode footer {
+    background-color: #282828;
+    color: #e0e0e0;
+    border-top: 1px solid #444;
+}
+
+body.dark-mode .profile-card,
+body.dark-mode .subscription-section,
+body.dark-mode .payment-section {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Toggle Button */
+#mode-toggle {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mode-toggle:hover {
+    background-color: #e55347;
+}

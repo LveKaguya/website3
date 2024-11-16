@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="site-logo" href="index.html">Learnify</a></li>
+                <li><a href="homepage.html"><b>Home</b></a></li>
+                <li><a href="realCourses.html">Courses</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="pro.html">PRO</a></li>
+                <li id="loginLink">
+                    <a class="nav-link btn btn-warning text-light" href="login.html">Login</a>
+                </li>
+                <li id="logoutSection" style="display: none;">
+                    <button onclick="logout()">Logout</button>
+                </li>
+                <li>
+                    <button id="mode-toggle" onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+     <h1>Create an account!</h1>
+    <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+</main>
+   
+    <script src="themeToggle.js"></script>
+     <script src="allFunctions.js"></script>
+</body>
+</html>
